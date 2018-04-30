@@ -4,20 +4,20 @@
 # --------------------------------------------------------
 
 class Container(object):
-	""" Represents a wrapper around an arbitrary value and a method to access it. """
+    """ Represents a wrapper around an arbitrary value and a method to access it. """
 
-	def __init__(self, value):
-		""" 
-		Wraps the given value in the Container. 
-		
-		'value' is any arbitrary value of any type including functions.
+    def __init__(self, value):
+        """
+        Wraps the given value in the Container.
 
-		"""
-		self.value = value
-	
-	def getValue(self):
-		""" Returns the value held by the Container. """
-		return self.value
+        'value' is any arbitrary value of any type including functions.
 
-	def __eq__(self, other):
-		return self.value == other.value
+        """
+        self.value = value
+
+    def getValue(self):
+        """ Returns the value held by the Container. """
+        return self.value
+
+    def __eq__(self, other):
+        return self.value == other.value
