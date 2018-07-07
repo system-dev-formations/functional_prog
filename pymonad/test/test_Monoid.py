@@ -4,8 +4,7 @@
 # --------------------------------------------------------
 
 import unittest
-from MonadTester import *
-from MonoidTester import *
+from .MonoidTester import *
 from pymonad.Monoid import *
 
 

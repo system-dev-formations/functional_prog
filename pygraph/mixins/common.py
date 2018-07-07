@@ -40,7 +40,7 @@ class common( object ):
         """
         str_nodes = repr( self.nodes() )
         str_edges = repr( self.edges() )
-        return "%s %s" % ( str_nodes, str_edges )
+        return "{} {}".format(str_nodes, str_edges )
 
     def __repr__(self):
         """
